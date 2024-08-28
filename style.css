@@ -1,0 +1,574 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  /* background-color: #f3fafa; */
+  /* position: relative; */
+}
+
+
+.hide{
+  display: none;
+}
+
+section{
+  margin: 10px auto;
+  padding: 10px;
+  width: 70%;
+}
+
+h4{
+  color: darkgreen;
+}
+/* 
+ul{
+  display: block;
+  list-style: none;
+  color: lightgreen;
+} */
+
+/* header{
+  width: 100%;
+ 
+ position: fixed; 
+ height: 17vh; 
+  top: 0; 
+  z-index: 34;
+   background-color: lightgreen;
+  
+} */
+
+
+
+.logo img{
+  width: 120px;
+}
+/* 
+nav{
+  height: 17vh;
+} */
+
+
+nav span{
+  font-size: 20px;
+}
+
+
+nav, nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: darkgreen;
+}
+
+.mobile{
+  display: none;
+}
+
+.hamburger-menu{
+  
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu span{
+  background-color: lightgreen;
+  padding: 3px;
+  margin: 2px;
+}
+
+
+
+
+.hero{
+
+  /* background-color: red; */
+  text-align: center;
+  align-content: center;
+ /* background-image: url('images/green.png');
+  background-size: cover;
+  background-position: center;  */
+  background-color: #f3fafa;
+  height: 100%;
+}
+
+.hero h1{
+  font-size: 30px;
+  margin: 20px 0;
+  color: lightgreen;
+}
+
+.hero p{
+  margin-bottom: 20px;
+  color: lightgreen;
+}
+
+.hero ul{
+  display: block;
+  list-style: none;
+  color: lightgreen;
+}
+
+.hero button{
+  width: 200px;
+  padding: 10px;
+  background-color: lightgreen;
+  color: darkgreen;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+.about{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about ul{
+  font-size: 12px;
+  margin: 10px 0;
+  list-style: none;
+  padding-left: 10px;
+}
+.about ul li{
+  margin: 5px 0;
+}
+
+.about .img{
+  width: 100%;
+}
+
+.about .img img{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  padding: 10px;
+}
+
+.content h4{
+  font-size: 35px;
+  margin: 20px 0;
+}
+
+.content p{
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: darkgreen;
+}
+
+/* .content p span{
+  margin: 10px 0;
+} */
+
+.content p.hidden{
+  display: none;
+}
+
+.content  button{
+  width: 115px;
+  padding: 7px 0;
+  background-color: lightgreen;
+  color: darkgreen;
+  border: none;
+  border-radius: 5px;
+}
+
+.services h4{
+  font-size: 35px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.services-items{
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 20px;
+
+}
+
+
+
+.service-item{
+  /* width: 33%; */
+  border:  1px solid black;
+  padding: 20px;
+  margin: 25px 0;
+
+}
+
+.service-item ul{
+  list-style: none;
+}
+.service-item ul li{
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.service-item-img{
+  width: 120px;
+  margin: 0 auto;
+}
+
+.service-item-img img{
+  width: 100%;
+}
+.service-item h4{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-item p{
+  font-size: 11px;
+  line-height: 16px;
+  color: darkgreen;
+}
+
+.service-item-btn{
+  
+  padding: 8px;
+background-color: lightgreen;
+color: darkgreen;
+border: none;
+border-radius: 5px;
+margin: 5px auto;
+font-size: 14px;
+
+
+}
+
+
+
+
+
+/* .contact{
+  border-top: 2px solid black;
+} */
+
+.contact h2{
+  font-size: 35px;
+  margin: 10px 0;
+}
+.contact-items{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+ 
+}
+
+.address p{
+  color: darkgreen;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact-form{
+  width: 300px;
+}
+
+.contact-form input{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.contact-form textarea{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-form button{
+  width: 100%;
+  padding: 10px;
+  background-color: lightgreen;
+  color: darkgreen;
+  border: none;
+  border-radius: 5px;
+}
+
+footer{
+  border-top: 2px solid lightgreen;
+  text-align: center;
+}
+
+
+
+
+
+@media (max-width: 485px) {
+  nav{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero{
+    padding: 10px 30px;
+  }
+
+  .hero h1{
+    font-size: 21px;
+    margin: 5px 0;
+  }
+
+  .hero p{
+    font-size: 12px;
+  }
+
+
+  .about{
+    display: block;
+  }
+
+  .about .img{
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .content{
+    padding: 5px 30px;
+  }
+
+  .content h4{
+    font-size: 21px;
+  }
+
+  .content p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .img{
+    padding: 30px;
+  }
+
+  .services h4{
+    font-size: 35px;
+  }
+
+  .services-items{
+    display: block;
+    padding: 5px 30px;
+    
+  }
+
+  .service-item{
+    margin-bottom: 20px;
+  }
+
+ 
+
+
+  .contact{
+    text-align: center;
+  }
+  .contact-items{
+    display: block;
+    margin: 0px auto;
+  }
+  .contact h2{
+    font-size: 35px;
+    margin: 10px 0;
+    color: darkgreen;
+  }
+
+  .contact-form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* .contact-form input{
+  
+  } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
